@@ -1,0 +1,130 @@
+body {
+  background-color: #1a1a1a;
+  color: white;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.kanban-wrapper {
+  padding: 20px;
+  text-align: center;
+}
+
+.main-heading {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  width: 250px;
+  padding: 6px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.input-section button {
+  padding: 6px 12px;
+  border: none;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.input-section button:hover {
+  background-color: #ddd;
+}
+
+.kanban-container {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 250px;
+  min-height: 350px;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 2px 2px 8px #000;
+}
+
+.todo {
+  background-color: #e9841e;
+  border-left: 12px solid #9a5a11;
+}
+
+.inprogress {
+  background-color: #2196f3;
+  border-left: 12px solid #0d47a1;
+}
+
+.done {
+  background-color: #4caf50;
+  border-left: 12px solid #1b5e20;
+}
+
+.trash {
+  background-color: #424242;
+  border: 4px dotted #ff0000;
+}
+
+.task {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: grab;
+  color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  position: relative;
+}
+
+.task:active {
+  cursor: grabbing;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+h3 {
+  margin-top: 0;
+  text-align: center;
+  color: white;
+}
+
+.edit-box {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.edit-box input {
+  flex: 1;
+  padding: 4px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.edit-box button {
+  padding: 4px 8px;
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
